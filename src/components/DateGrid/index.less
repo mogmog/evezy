@@ -1,0 +1,33 @@
+.DateGrid {
+
+
+
+  .grid_dow {
+
+    float:left;
+
+    display:grid;
+    grid-template-columns: 20px ;
+    grid-template-rows: 20px repeat(6, 20px);
+    grid-auto-flow: column;
+  }
+
+  .grid {
+    position : absolute;
+    top : 0;
+    left : 20px;
+    display:grid;
+    grid-template-columns: 20px repeat(51, 20px);
+    grid-template-rows: 20px repeat(6, 20px);
+    grid-auto-flow: column;
+  }
+
+  .grid > * {
+    background: rgba(0,0,0,0.1);
+    border: 1px white solid;
+    text-align: center;
+  }
+
+
+}
+
